@@ -1,6 +1,5 @@
-Run
-Copy code
-# Product Management Application
+
+# Product Catalog Application
 
 This is a full-stack product management application built with Nest.js for the backend and Next.js for the frontend. The application allows users to manage products, including adding, deleting, and viewing product details and API documentation.
 
@@ -29,6 +28,7 @@ Run the following command to start the database:
 docker-compose up -d
 
 Step 3: Configure Environment Variables
+Backend
 Create a .env file in the backend directory and add the following environment variables:
 
 DATABASE_HOST=localhost
@@ -37,6 +37,11 @@ DATABASE_USER=postgers
 DATABASE_PASSWORD=password  // database password
 DATABASE_NAME=database name   // database name
 JWT_SECRET=your_jwt_secret
+
+Frontend
+Create a .env file in the frontend directory and add the following environment variables:
+
+NEXT_PUBLIC_API_URL=http://localhost:8000 //your api URL
 
 Step 4: Install Dependencies
 Navigate to the backend and frontend directories and install the required dependencies:
